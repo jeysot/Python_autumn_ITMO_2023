@@ -5,7 +5,7 @@ def count_digits(sublist):
     return sum(map(lambda x: len(str(x)), sublist))
 
 # Сортировка каждого подсписка по убыванию
-sorted_sublists = [sorted(sublist, reverse=True) for sublist in input_list]
+sorted_sublists = [sorted(sublist, reverse=True) for sublist in list]
 
 # Сортировка внешнего списка по возрастанию общего количества цифр в каждом подсписке
 sorted_list = sorted(sorted_sublists, key=count_digits)
