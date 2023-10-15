@@ -1,4 +1,4 @@
-def minimum(lst):
+def f(lst):
     min_x = min(lst)
     max_x = max(lst)
 
@@ -8,5 +8,5 @@ def minimum(lst):
     return min_ind, max_ind
 
 x = [1, 2, 3, 4, 1, 2, 3, 4, 1, 4]
-min_ind, max_ind = minimum(x)
+min_ind, max_ind = f(x)
 print(min_ind, max_ind)
