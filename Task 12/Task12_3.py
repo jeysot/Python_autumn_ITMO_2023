@@ -1,5 +1,6 @@
 def num(s):
     ranges = s.split(',')
+    # ['1-2', '4-4', '3-6']
     numbers = []
     for i in ranges:
         start, end = i.split('-')
