@@ -1,10 +1,12 @@
 def tri_2(n):
     if n == 1:
-        return print('*')
+        print('*')
+        return
     print('*' * n)
     tri_2(n - 1)
     print('*' * n)
+    return
 
 
 n = int(input('n: '))
-print(tri_2(n))
+tri_2(n)
