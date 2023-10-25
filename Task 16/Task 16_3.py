@@ -1,7 +1,9 @@
 
 def low(func):
     def wrapper():
-        func()
+        result = func()
+        res = result.lower()
+        return res
     return wrapper
 
 
