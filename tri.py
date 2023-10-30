@@ -110,4 +110,101 @@
 # b.info()
 
 
+# class Figure:
+#     def __init__(self, color, peri=0):
+#         self.peri = peri
+#         self.color = color
+#
+#     def get_peri(self, peri):
+#         print(self.peri)
+#         return
+#
+# a = Figure('Red', 100)
+# b = Figure('Blue')
 
+
+# class Student:
+#     def __init__(self, name):
+#         print('Inside constructor')
+#         self.name = name
+#         print('Object initialized')
+#
+#     def show(self):
+#         print('Hello, my name is', self.name)
+#
+#
+# def __del__(self):
+#     print('Inside destructor')
+#     print('Object destroyed')
+#
+#
+# s1 = Student('Emma')
+# s1.show()
+# del s1
+# s1.show()
+
+
+# class Student:
+#     lst = []
+#     def __init__(self, name):
+#         self.name = name
+#         Student.lst.append(self.name)
+#
+#     def info(self):
+#         print(f'Name: {self.name}')
+#         print(Student.lst)
+#
+# s1 = Student('Emma')
+# s1.info()
+# s2 = Student('Bob')
+# s2.info()
+#
+# class Tree(object):
+#     def __init__(self, kind, height):
+#         self.kind = kind
+#         self.age = 0
+#         self.height = height
+#
+#     def grow(self):
+#         self.age += 1
+#
+#
+# class FruitTree(Tree):
+#     def __init__(self, kind, height):
+#         super().__init__(kind, height)
+#
+#     def give_fruits(self, how_many):
+#         print(f"{how_many} of {self.kind}")
+#
+# # f_tree = FruitTree('apple', 0.7)
+# # f_tree.give_fruits()
+# # f_tree.grow()
+#
+# b = FruitTree('orange', 0.5)
+# b.give_fruits(2)
+
+
+class Figure:
+    def __init__(self, color, peri=0):
+        self.color = color
+        self.peri = peri
+
+
+class Triangle(Figure):
+    def __init__(self, color, a, b, c):
+        self.color = color
+        self.a = a
+        self.b = b
+        self.c = c
+    def set_peri(self):
+        self.peri = self.a + self.b + self.c
+
+class  rectangle(Figure):
+    def __init__(self,color,  le, wi):
+
+
+
+abc = Triangle('Red', 3, 4, 5)
+abc.set_peri()
+print(abc.peri)
+print(abc.color)
