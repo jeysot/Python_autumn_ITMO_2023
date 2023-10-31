@@ -6,7 +6,7 @@ class Teacher:
         pupil.receive_task(task)
 
     def check_task(self, pupil, task):
-        task.solve_task()
+        # task.solve_task()
         pupil.receive_feedback(task)
 
 
@@ -19,7 +19,7 @@ class Pupil:
         self.task = task
 
     def solve_task(self):
-        if self.task:
+        if self.task != None:
             self.task.solve_task()
 
     def receive_feedback(self, task):

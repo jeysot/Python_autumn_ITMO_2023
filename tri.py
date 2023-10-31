@@ -183,28 +183,60 @@
 # b = FruitTree('orange', 0.5)
 # b.give_fruits(2)
 
+#
+# class Figure:
+#     def __init__(self, color, peri=0):
+#         self.color = color
+#         self.peri = peri
+#
+#
+# class Triangle(Figure):
+#     def __init__(self, color, a, b, c):
+#         self.color = color
+#         self.a = a
+#         self.b = b
+#         self.c = c
+#     def set_peri(self):
+#         self.peri = self.a + self.b + self.c
+#
+# class  rectangle(Figure):
+#     def __init__(self,color,  le, wi):
+#
+#
+#
+# abc = Triangle('Red', 3, 4, 5)
+# abc.set_peri()
+# print(abc.peri)
+# print(abc.color)
 
-class Figure:
-    def __init__(self, color, peri=0):
-        self.color = color
-        self.peri = peri
+#
+# class Student:
+#     stdnt = []
+#
+#     def __init__(self, name, fives, tens, twenties):
+#         self.name = name
+#         self.fives = fives
+#         self.tens = tens
+#         self.twenties = twenties
+#         Student.stdnt.append(self)
+#
+#     def result(self):
+#         for st in Student.stdnt:
+#             su = st.fives * 5 + st.tens * 10 + st.twenties * 20
+#             print(st.name, su)
+#
+#
+# a = Student('Ivan', 1, 17, 19)
+# b = Student('Petr', 29, 12, 2)
+# c = Student('Cead', 0, 0, 1)
+# a.result()
 
 
-class Triangle(Figure):
-    def __init__(self, color, a, b, c):
-        self.color = color
-        self.a = a
-        self.b = b
-        self.c = c
-    def set_peri(self):
-        self.peri = self.a + self.b + self.c
+# class SC():
+#     def __init__(self):
+#         self.__param = 42
+#
+# obj = SC()
+# # obj.__param
+# print(obj._SC__param)
 
-class  rectangle(Figure):
-    def __init__(self,color,  le, wi):
-
-
-
-abc = Triangle('Red', 3, 4, 5)
-abc.set_peri()
-print(abc.peri)
-print(abc.color)
